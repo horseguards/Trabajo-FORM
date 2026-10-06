@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=git, initial-scale=1.0" />
+    <title>Trabajo con Formularios</title>
+  </head>
+  <body>
+    <h1>My feedback form</h1>
+
+    <main>
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+        </li>
+        <li>
+          <label for="user-password">Password</label>
+          <input type="password" id="user-password" name="password" required />
+        </li>
+        <p></p>
+        <li>
+          <span>Please, check all the emotions that apply to you:</span>
+        </li>
+        <ul>
+          <li>
+            <label for="angry">Angry</label>
+            <input type="checkbox" id="angry" name="angry" checked />
+          </li>
+          <li>
+            <label for="sad">Sad</label>
+            <input type="checkbox" id="sad" name="sad" />
+          </li>
+          <li>
+            <label for="happy">Happy</label>
+            <input type="checkbox" id="happy" name="happy" />
+          </li>
+          <li>
+            <label for="ambivalent">Ambivalent</label>
+            <input type="checkbox" id="ambivalent" name="ambivalent" />
+          </li>
+        </ul>
+        <li>
+          <span>How satisfied were you with our service?</span>
+        </li>
+        <ul>
+          <li>
+            <label for="vs">Very satisfied</label>
+            <input type="radio" id="vs" name="rb" value="vs" checked />
+          </li>
+          <li>
+            <label for="vs">Satisfied</label>
+            <input type="radio" id="s" name="rb" value="s" />
+          </li>
+          <li>
+            <label for="dc">Didn't care</label>
+            <input type="radio" id="dc" name="rb" value="dc" />
+          </li>
+          <li>
+            <label for="ds">Dissatisfied</label>
+            <input type="radio" id="ds" name="rb" value="ds" />
+          </li>
+          <li>
+            <label for="vd">Very dissatisfied</label>
+            <input type="radio" id="vd" name="rb" value="vd" />
+          </li>
+        </ul>
+        <li>
+          <label for="name">Further comments</label>
+          <textarea id="story" name="story" rows="3" cols="28"> </textarea>
+        </li>
+        <li>
+          <label for="photo">Bio photo</label>
+          <input type="text" id="photo" name="photo" />
+          <input type="button" value="Choose..." />
+        </li>
+        <li>
+          <label for="country">Location visited</label>
+          <select name="country" id="country">
+            <option value="no seleccionado" selected disabled>
+              Select location
+            </option>
+            <option value="ark">Arkansas</option>
+            <option value="oregon">Oregon</option>
+            <option value="idaho">Idaho</option>
+          </select>
+        </li></ul>
+        <ul><li><button type="submit">Submit</button></li>
+      </ul>
+    </main>
+  </body>
+</html>
